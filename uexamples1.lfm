@@ -1,0 +1,64 @@
+object Form1: TForm1
+  Left = 456
+  Height = 240
+  Top = 260
+  Width = 320
+  Caption = 'Form1'
+  ClientHeight = 240
+  ClientWidth = 320
+  OnCreate = FormCreate
+  LCLVersion = '2.2.6.0'
+  object Memo1: TMemo
+    Left = 0
+    Height = 240
+    Top = 0
+    Width = 150
+    Align = alLeft
+    Lines.Strings = (
+      'Memo1'
+    )
+    ScrollBars = ssVertical
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 160
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'fill array'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 160
+    Height = 25
+    Top = 40
+    Width = 75
+    Caption = 'show array'
+    OnClick = Button2Click
+    TabOrder = 2
+  end
+  object Button3: TButton
+    Left = 160
+    Height = 25
+    Top = 112
+    Width = 123
+    Caption = 'raise exception'
+    OnClick = Button3Click
+    TabOrder = 3
+  end
+  object Button4: TButton
+    Left = 160
+    Height = 25
+    Top = 168
+    Width = 123
+    Caption = 'sys open file'
+    OnClick = Button4Click
+    TabOrder = 4
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = 'All Files (*.*)|*.*'
+    Left = 276
+    Top = 20
+  end
+end
